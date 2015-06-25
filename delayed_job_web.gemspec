@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
     "README.markdown",
     "Rakefile",
     "delayed_job_web.gemspec"
-  ] + %x{ git ls-files }.split("\n").select { |d| d =~ %r{^(lib|test|bin)} }
+  ] + Dir['lib/**/*.rb'] + Dir['bin/*'] + Dir['[A-Z]*'] + Dir['test/**/*']
 
   gem.extra_rdoc_files = [
     "LICENSE.txt",
