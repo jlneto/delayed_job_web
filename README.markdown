@@ -1,6 +1,9 @@
 delayed_job_web
 ===============
 
+This version is adapted to run with mongoid/mongoDB
+do not use git -ls to avoid fatal: Not a git repository (or any of the parent directories): .git in production
+
 A [resque][0] inspired (read: stolen) interface for delayed_job.
 This gem is written to work with rails 3 and 4 applications using
 activerecord.
